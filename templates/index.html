@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Trending Videos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Trending YouTube Videos</h1>
+    <ul>
+        {% for video in videos %}
+        <li>
+            <h3>
+                <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">
+                    {{ video.title }}
+                </a>
+            </h3>
+            <p data-label="{{ video.label }}">{{ video.label }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Trending Videos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Trending YouTube Videos</h2>
+    <ul>
+        {% for video in videos %}
+        <li>
+            <h3>
+                <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">
+                    {{ video.title }}
+                </a>
+            </h3>
+            <p data-label="{{ video.label }}">{{ video.label }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
+
+

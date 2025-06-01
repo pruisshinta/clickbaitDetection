@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #222;
+    /* margin-bottom: 25px; */
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    position: sticky;
+    font-size: 32px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 1;
+    padding: 10pt;
+    margin-bottom: 10pt;
+}
+
+/* Video list container */
+ul {
+    list-style-type: none;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+}
+
+/* Individual video item */
+li {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-bottom: 6px solid #3b82f6;
+}
+
+h3 {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    transition: color 0.3s ease;
+}
+
+h3 a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Label styling */
+p {
+    font-size: 1rem;
+    color: #555;
+    font-weight: normal;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+p[data-label="Clickbait"] {
+    background-color: #fde68a;
+    color: #92400e;
+}
+
+p[data-label="Non-Clickbait"] {
+    background-color: #bbf7d0;
+    color: #064e3b;
+}
+
+/* Start Page Container */
+.start-container {
+
+    /* position: sticky; */
+    margin: 30px;
+    background-color: white;
+    padding: 50px 0;
+    /* z-index: 100; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;        /* biar lebar penuh */
+    text-align: center;
+    align-items: center;
+    width: 70%;
+}
+
+.hasil-container {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.label-clickbait {
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #006400;
+    background-color: #b2f0c0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.label-clickbait.clickbait {
+    color: #8b0000;
+    background-color: #f7bdbd;
+}
+
+.detecttext {
+    margin-top: 20px;
+}
+
+.detecttext input[type="text"] {
+    padding: 10px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.detecttext input[type="submit"] {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #Da8149;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detecttext input[type="submit"]:hover {
+    background-color: #8f5937;
+}
+.btn-detect {
+    display: inline-block;
+    padding: 10px;
+    width: 55%;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #Da8149;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+
+    transition: background-color 0.3s ease;
+}
+
+.btn-detect:hover {
+    background-color: #8f5937;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #d77c4c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #b65f2e;
+}
